@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive course card section for the YSSE Main Portal / Course System (Week 3 task).">
+  <title>Explore Our Courses | YSSE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Reusable icons (referenced with <use>) -->
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M4 21.5A2.5 2.5 0 0 1 6.5 19H20v2H6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <section class="courses" aria-labelledby="courses-heading">
+    <div class="container">
+
+      <!-- Section header -->
+      <header class="section-header">
+        <p class="section-label">YSSE Learning Hub</p>
+        <h1 id="courses-heading" class="section-title">Learn New Skills.<br>Build Your Future.</h1>
+        <p class="section-intro">
+          Explore practical courses in web development, programming, design, and digital marketing.
+          Build useful skills at your own pace and take the next step toward your goals.
+        </p>
+      </header>
+
+      <!-- Course cards -->
+      <div class="course-grid">
+
+        <article class="course-card">
+          <div class="course-media">
+            <img src="images/web-development.jpg" alt="Illustration of a code editor window showing lines of HTML code" width="1200" height="750" loading="lazy">
+            <span class="tag tag-level">Beginner</span>
+            <span class="tag tag-type tag-free">Free</span>
+          </div>
+          <div class="course-body">
+            <p class="course-category">Web Development</p>
+            <h2 class="course-title">Introduction to Web Development</h2>
+            <p class="course-description">
+              Learn how to structure web pages with HTML and style them with CSS,
+              step by step.
+            </p>
+            <ul class="course-info">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>6 weeks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>24 lessons</li>
+            </ul>
+            <a href="#" class="btn">Enroll Now <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-media">
+            <img src="images/graphic-design.jpg" alt="Illustration of overlapping color circles, a pen path and paint swatches" width="1200" height="750" loading="lazy">
+            <span class="tag tag-level">Beginner</span>
+            <span class="tag tag-type tag-paid">Paid</span>
+          </div>
+          <div class="course-body">
+            <p class="course-category">Graphic Design</p>
+            <h2 class="course-title">Graphic Design Fundamentals</h2>
+            <p class="course-description">
+              Understand color, layout, and typography, and create clean visual
+              designs for print and web.
+            </p>
+            <ul class="course-info">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>5 weeks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>20 lessons</li>
+            </ul>
+            <a href="#" class="btn">Enroll Now <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-media">
+            <img src="images/digital-marketing.jpg" alt="Illustration of a growth chart with rising bars and a trend line" width="1200" height="750" loading="lazy">
+            <span class="tag tag-level">Beginner</span>
+            <span class="tag tag-type tag-paid">Paid</span>
+          </div>
+          <div class="course-body">
+            <p class="course-category">Digital Marketing</p>
+            <h2 class="course-title">Digital Marketing Essentials</h2>
+            <p class="course-description">
+              Discover social media, content, and search marketing basics to
+              grow an audience online.
+            </p>
+            <ul class="course-info">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>4 weeks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>16 lessons</li>
+            </ul>
+            <a href="#" class="btn">Enroll Now <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-media">
+            <img src="images/python-programming.jpg" alt="Illustration of a dark code window beside two interlocking blue and yellow shapes" width="1200" height="750" loading="lazy">
+            <span class="tag tag-level">Beginner</span>
+            <span class="tag tag-type tag-free">Free</span>
+          </div>
+          <div class="course-body">
+            <p class="course-category">Programming</p>
+            <h2 class="course-title">Python Programming for Beginners</h2>
+            <p class="course-description">
+              Start coding with Python: variables, loops, functions, and small
+              projects to practise.
+            </p>
+            <ul class="course-info">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>8 weeks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>30 lessons</li>
+            </ul>
+            <a href="#" class="btn">Enroll Now <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-media">
+            <img src="images/ui-ux-design.jpg" alt="Illustration of a mobile app screen next to a website layout wireframe" width="1200" height="750" loading="lazy">
+            <span class="tag tag-level tag-mid">Intermediate</span>
+            <span class="tag tag-type tag-paid">Paid</span>
+          </div>
+          <div class="course-body">
+            <p class="course-category">UI/UX Design</p>
+            <h2 class="course-title">UI/UX Design Basics</h2>
+            <p class="course-description">
+              Learn user-centered design and build simple app and website
+              layouts in wireframes.
+            </p>
+            <ul class="course-info">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>6 weeks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>22 lessons</li>
+            </ul>
+            <a href="#" class="btn">Enroll Now <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-media">
+            <img src="images/data-analysis.jpg" alt="Illustration of a data table next to a pie chart and legend" width="1200" height="750" loading="lazy">
+            <span class="tag tag-level tag-mid">Intermediate</span>
+            <span class="tag tag-type tag-free">Free</span>
+          </div>
+          <div class="course-body">
+            <p class="course-category">Data Skills</p>
+            <h2 class="course-title">Data Analysis with Spreadsheets</h2>
+            <p class="course-description">
+              Clean, organise, and visualise data using formulas, tables,
+              and charts.
+            </p>
+            <ul class="course-info">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>5 weeks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>18 lessons</li>
+            </ul>
+            <a href="#" class="btn">Enroll Now <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="section-footer">
+        <a href="#" class="btn btn-outline">View All Courses</a>
+        <p class="disclaimer">Sample course details shown for demonstration purposes only.</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
